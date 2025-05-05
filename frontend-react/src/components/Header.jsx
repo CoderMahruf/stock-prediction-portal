@@ -1,7 +1,7 @@
 import {useContext} from "react";
 import Button from "./Button";
 import { Link, useNavigate } from 'react-router-dom'
-import { AuthContext } from "../Authprovider";
+import { AuthContext } from "../AuthProvider";
 
 const Header = () => {
     const {isLoggedIn, setIsLoggedIn} = useContext(AuthContext)
@@ -22,6 +22,8 @@ const Header = () => {
             <div>
               {isLoggedIn ? (
                 <>
+                <Button text='Dashboard' class="btn-info" url="/dashboard" />
+                &nbsp;
                 <button className='btn btn-danger' onClick={handleLogout}>Logout</button>
                 </>
               ) : (

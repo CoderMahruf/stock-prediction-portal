@@ -12,3 +12,11 @@ class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
+
+class ProtectedView(APIView):
+    permission_classes = [IsAuthenticated]
+    def get(self,request):
+        response = {
+            'status':'Requested was permitted'
+        }
+        return Response(response)
