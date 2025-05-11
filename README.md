@@ -9,7 +9,7 @@ This is a web-based Stock Prediction App that uses machine learning (LSTM model 
 - 🔍 Enter any stock ticker symbol to view predictions
 - 📊 Displays historical closing prices in an interactive chart
 - 🧠 Utilizes LSTM (Long Short-Term Memory) neural networks for predictions
-- ⚙️ Backend built with Django + DRF
+- ⚙️ Backend built with Django Rest Framework
 - 🖥️ Simple and intuitive UI
 
 ---
@@ -72,4 +72,4 @@ This is a web-based Stock Prediction App that uses machine learning (LSTM model 
    python manage.py runserver
 
 ## 🧑‍💻 Author
-Built with ❤️ by Mahruful Alam
+Built with 🖥️ by Mahruful Alam
